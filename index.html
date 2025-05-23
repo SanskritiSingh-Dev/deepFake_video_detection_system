@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepDefender | Deepfake Video Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>DeepDefender 🛡️</h1>
+    <p>Your friendly deepfake video guardian</p>
+  </header>
+
+  <main>
+    <section class="instructions">
+      <h2>How to Use 🔍</h2>
+      <ol>
+        <li>📁 <strong>Choose Video</strong> by clicking the button below.</li>
+        <li>⏳ Wait a few seconds while DeepDefender checks your video.</li>
+        <li>✅ Get your result: <em>Real</em> or <em>Deepfake</em>.</li>
+        <li>🛑 Stay alert and protect yourself from fake videos.</li>
+      </ol>
+    </section>
+
+    <section class="upload-section">
+      <label for="videoInput" class="custom-file-upload">
+        📂 Choose Video
+      </label>
+      <input type="file" id="videoInput" accept="video/*" />
+      <button id="detectBtn" disabled>🚀 Detect Deepfake</button>
+      <div id="loadingSpinner" class="hidden" aria-live="polite" aria-busy="true"></div>
+    </section>
+
+    <section id="result" class="result hidden" role="region" aria-live="polite">
+      <h3>Result:</h3>
+      <p id="resultText"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DeepDefender. Protecting truth with tech.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
