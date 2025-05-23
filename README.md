@@ -1,78 +1,53 @@
-# 🛡️ Deepfake Video Detection System
+# 🛡️ DeepDefender - Deepfake Video Detection System
 
-Welcome to the **Deepfake Video Detection System** – your AI-powered guardian against video manipulation. Built with cutting-edge deep learning techniques, this tool allows everyday users to detect whether a video is real or deepfaked in just a few clicks.
+DeepDefender is an AI-powered deepfake detection system designed with **everyday users in mind**. It allows you to upload a video and instantly detect whether it has been digitally manipulated using deepfake technologies.
 
-> 🎯 **Mission**: Empower normal users, not just experts, to spot deepfakes and fight misinformation.
-
----
-
-## 🖼️ Website Preview
-
-![App Screenshot](./screenshots/homepage.png)  
-*Elegant UI with intuitive design, bold colors, and simple navigation*
+> 🎯 Our mission: Make deepfake detection simple, accessible, and trustworthy for the general public—not just experts.
 
 ---
 
-## 🚀 Features
+## 🌐 Live Demo
 
-- 🎥 Upload `.mp4` videos directly
-- 🧠 AI model (CNN, RNN, or Transformer) detects deepfake patterns
-- 📊 Displays confidence score
-- ✅ Clear Real / Fake result
-- 🎨 Modern UI with color theme: `#1A1A1D`, `#3B1C32`, `#6A1E55`, `#A64D79`
-- 📱 Responsive design for phones, tablets, and desktops
+🚀 Coming soon... (You can host using Flask locally for now.)
 
 ---
 
-## 🔍 How It Works
+## 📸 Features
 
-1. 📤 Upload a video in `.mp4` format  
-2. 🧠 Our model analyzes the facial features, motion patterns, and inconsistencies  
-3. ⏱️ Wait a few seconds while our server processes it  
-4. 📊 Get a clear result with explanation and confidence score
-
----
-
-## 🧪 Try Sample Videos
-
-Here are some public test videos you can use:
-
-### ✅ Real Videos
-- [Real Sample 1](https://github.com/ondyari/FaceForensics/raw/master/dataset/original_sequences/youtube/c23/videos/000_003.mp4)
-- [Real Sample 2](https://github.com/ondyari/FaceForensics/raw/master/dataset/original_sequences/youtube/c23/videos/003_001.mp4)
-
-### ❌ Fake Videos
-- [Deepfake Sample 1](https://github.com/ondyari/FaceForensics/raw/master/dataset/manipulated_sequences/DeepFakeDetection/c23/videos/000_003.mp4)
-- [Deepfake Sample 2](https://github.com/ondyari/FaceForensics/raw/master/dataset/manipulated_sequences/DeepFakeDetection/c23/videos/003_001.mp4)
+- 🧠 **AI-Powered Detection** using advanced CNN/RNN/Transformer models.
+- 🖼️ **User-Friendly Interface** – Simple drag-and-drop upload system.
+- 🎨 Beautiful UI with a classy dark theme.
+- 📱 Responsive on mobile, tablet, and desktop.
+- 📢 Real-time results with visual clarity.
 
 ---
 
-## 💡 Technologies Used
+## 🛠️ Tech Stack
 
-| Frontend      | Backend       | AI/ML        |
-|---------------|---------------|--------------|
-| HTML/CSS/JS   | Python Flask  | CNN/RNN/Transformer |
-| Bootstrap     | Express.js (Optional) | OpenCV |
-| Custom JS Animations | REST API | Keras / PyTorch |
+| Frontend | Backend |
+|----------|---------|
+| HTML5, CSS3, JavaScript|
+---
+
+## 🧑‍💻 How to Use
+
+1. 📁 **Upload** your MP4 video using the Upload Button.
+2. 🔍 **Wait** for the system to analyze the video frame-by-frame.
+3. ✅ **Get Results** instantly – "REAL" or "FAKE", with a confidence score.
+4. 🧾 See detailed logs if you want to dive deeper.
+
+> 🎉 Tip: Try uploading a FaceForensics++ video to test real vs deepfake detection!
 
 ---
 
-## 🛠️ Installation Guide
+## 🧪 Test Videos
 
-> 💡 Prerequisites: Python 3.8+, pip, virtualenv
+You can download test videos from these trusted sources:
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/deepfake-detector.git
-cd deepfake-detector
+### 🔗 Kaggle (Preprocessed MP4s)
+- [FaceForensics++ C23 Dataset (MP4)](https://www.kaggle.com/datasets/xdxd003/ff-c23)
+- [FaceForensics1600 - 800 Real & 800 Fake Videos](https://www.kaggle.com/datasets/farhansharukhhasan/faceforensics1600-videospreprocess)
 
-# Set up Python virtual environment
-python -m venv venv
-source venv/bin/activate  # For Linux/Mac
-venv\Scripts\activate     # For Windows
+### 💻 Full Dataset via Script
+- [FaceForensics++ GitHub Repo](https://github.com/ondyari/FaceForensics)
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python app.py
